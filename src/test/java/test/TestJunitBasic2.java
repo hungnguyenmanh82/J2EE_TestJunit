@@ -1,9 +1,15 @@
 package test;
 
 import org.junit.Assert;// keyword here
+
+// import org.junit.Assert.*;  //dùng cái này nếu muốn bỏ mục Assert
 import org.junit.Test;
 
-public class TestJunit1 {
+/**
+ * xem thêm cách dùng các Anotation của JUnit rất hay.
+ * Xem ví dụ ở project  <MockWebserver>
+ */
+public class TestJunitBasic2 {
     @Test
     public void testcase1() {
     	System.out.println("====================== testcase1 is running");
@@ -14,7 +20,7 @@ public class TestJunit1 {
     public void testcase2() {
     	System.out.println("====================== testcase2 is running");
     	int result = 1 + 5;
-        Assert.assertTrue(result == 6);;
+        Assert.assertTrue(result == 6); 
     }
     
     @Test

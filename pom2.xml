@@ -12,7 +12,6 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -22,17 +21,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.7.1</version>
 				<configuration>
-					<!-- each method will run on a thread of threadPool -->
-					<parallel>methods</parallel>
-					<!-- 5 threads in threadpool to run testcases -->
+					<parallel>classes</parallel>
 					<threadCount>5</threadCount>
-					<includes>
-						<include>test/ParallelExample.java</include>
-					</includes>
-<!-- 					<excludes>
-						<exclude>**/TestCircle.java</exclude>
-						<exclude>**/TestSquare.java</exclude>
-					</excludes> -->
 				</configuration>
 			</plugin>
 		</plugins>
