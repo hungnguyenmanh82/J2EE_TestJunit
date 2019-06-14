@@ -5,6 +5,14 @@
 	<artifactId>TestJunit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -29,10 +37,8 @@
 					<includes>
 						<include>test/ParallelExample.java</include>
 					</includes>
-<!-- 					<excludes>
-						<exclude>**/TestCircle.java</exclude>
-						<exclude>**/TestSquare.java</exclude>
-					</excludes> -->
+					<!-- <excludes> <exclude>**/TestCircle.java</exclude> <exclude>**/TestSquare.java</exclude> 
+						</excludes> -->
 				</configuration>
 			</plugin>
 		</plugins>

@@ -5,7 +5,7 @@ import org.junit.experimental.ParallelComputer;
 import org.junit.runner.RunWith;
 
 /**
- * cách chạy với Maven là cách hay nhất
+ * Eclipse ko hỗ trợ report kết quả test khi dùng parallel run test case.
  */
 /** pom.xml:
 	<build>
